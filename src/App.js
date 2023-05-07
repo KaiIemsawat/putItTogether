@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+
+import PutTogether from "./components/PutTogether";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+    <PutTogether
+      lastName = { "Doe" }
+      firstName = { "Jane" }
+      initAge = {45}
+      hairColor = { "Black" }
+    />
+    <PutTogether
+      lastName = { "Smith" }
+      firstName = { "John" }
+      initAge = {88}
+      hairColor = { "Brown" }
+    />
+   </>
   );
 }
 
